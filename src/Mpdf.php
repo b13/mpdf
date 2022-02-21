@@ -11502,7 +11502,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 
 			if (substr($path, 0, 1) == "/") {
 
-				$tr = parse_url($basepath);
+				$tr = parse_url($basepath ?? '');
 
 				// mPDF 5.7.2
 				$root = '';
